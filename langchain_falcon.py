@@ -11,7 +11,7 @@ load_dotenv()
 
 HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACE_API_TOKEN")
 
-repo_id = "tiiuae/falcon-7b-instruct"
+repo_id = "meta-llama/Llama-2-70b-hf"
 llm = HuggingFaceHub(huggingfacehub_api_token=HUGGINGFACEHUB_API_TOKEN, 
                      repo_id=repo_id, 
                      model_kwargs={"temperature":0.7, "max_new_tokens":500})
